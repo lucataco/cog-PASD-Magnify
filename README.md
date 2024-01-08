@@ -20,6 +20,6 @@ Download the weights to the proper folder:
 
 Run a prediction:
 
-    cog predict --i image=@frog.png
+    cog predict -i image=@frog.png
 
 ![knight](output.jpg)
