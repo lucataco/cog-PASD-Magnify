@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+import os
+
+BaseModelUrl = "https://huggingface.co/runwayml/stable-diffusion-v1-5"
+BaseModelDir = "./PASD/checkpoints/stable-diffusion-v1-5"
+
+# git clone -b fp16 https://huggingface.co/runwayml/stable-diffusion-v1-5
+
+# os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M {BaseModelUrl}/raw/main/model_index.json -d {BaseModelDir} -o model_index.json")
+
+# RUN aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/PASD/resolve/main/majicmixRealistic_v6.safetensors -d $HOME/app/checkpoints/personalized_models -o majicmixRealistic_v6.safetensors
+# RUN aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/PASD/resolve/main/pasd/checkpoint-100000/scaler.pt -d $HOME/app/runs/pasd/checkpoint-100000 -o scaler.pth
+# RUN aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/PASD/raw/main/pasd/checkpoint-100000/unet/config.json -d $HOME/app/runs/pasd/checkpoint-100000/unet -o config.json
+# RUN aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/PASD/resolve/main/pasd/checkpoint-100000/unet/diffusion_pytorch_model.safetensors -d $HOME/app/runs/pasd/checkpoint-100000/unet -o diffusion_pytorch_model.safetensors
+# RUN aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/PASD/raw/main/pasd/checkpoint-100000/controlnet/config.json -d $HOME/app/runs/pasd/checkpoint-100000/controlnet -o config.json
+# RUN aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/PASD/resolve/main/pasd/checkpoint-100000/controlnet/diffusion_pytorch_model.safetensors -d $HOME/app/runs/pasd/checkpoint-100000/controlnet -o diffusion_pytorch_model.safetensors
+
